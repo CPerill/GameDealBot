@@ -16,7 +16,8 @@ import requests
 app=Flask(__name__)
 
 # Page access token that the Facebook App uses
-PAT = 'EAACAFmJHCnYBALaqWcQC5bTtCkld5rQPhHeEveG6ytZBJh5UPydcyxTpEitVTNCqbPztvm5xkxWmBVkgk0NYRGcLHEgRpVGpwqvtjEFLbSgLhBAXNH42f5ozx3ZAOnu7VIZCJ1kZBxSP5MqaPSVaiv9WT4my2LXpnV2SzxRz9gZDZD'
+PAT = 'EAACAFmJHCnYBALaqWcQC5bTtCkld5rQPhHeEveG6ytZBJh5UPydcyxTpEitVTNCqbPztvm5xkxWmBVkgk0NYRGcLHEgRpVGpwqvtjEFLb' \
+      'SgLhBAXNH42f5ozx3ZAOnu7VIZCJ1kZBxSP5MqaPSVaiv9WT4my2LXpnV2SzxRz9gZDZD'
 
 @app.route('/', methods=['GET'])    # Verify token created when we created app on Facebook, if it matches we return the
                                     # challenge back to Facebook

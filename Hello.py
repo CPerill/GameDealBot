@@ -29,7 +29,7 @@ def handle_verification():
         print "Verification Failed!"
         return 'Error, wrong validation token'
 
-@app.route('/', methods=['POST'])   # 
+@app.route('/', methods=['POST'])   #
 def handle_messages():
     print "Handling Messages"
     payload = request.get_data()

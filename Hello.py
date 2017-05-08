@@ -13,10 +13,10 @@ from flask import Flask, request
 import json
 import requests
 
-app = Flask(__name__)
+app=Flask(__name__)
 
 # Page access token that the Facebook App uses
-PAT = ''
+PAT = 'EAACAFmJHCnYBALaqWcQC5bTtCkld5rQPhHeEveG6ytZBJh5UPydcyxTpEitVTNCqbPztvm5xkxWmBVkgk0NYRGcLHEgRpVGpwqvtjEFLbSgLhBAXNH42f5ozx3ZAOnu7VIZCJ1kZBxSP5MqaPSVaiv9WT4my2LXpnV2SzxRz9gZDZD'
 
 @app.route('/', methods=['GET'])    # Verify token created when we created app on Facebook, if it matches we return the
                                     # challenge back to Facebook
@@ -73,4 +73,4 @@ def send_message(token, recipient, text):
         print r.text
 
 if __name__ == '__main__':
-    app.run(())
+    app.run()

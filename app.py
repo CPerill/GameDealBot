@@ -85,9 +85,9 @@ def messaging_events(payload):
     provided payload.
     """
     data = json.loads(payload)
-    print "*******************"
-    print data
-    print "*******************"
+    print "*********PP**********"
+    print json.dumps(payload, sort_keys=True, indent=4, separators=(',', ': '))
+    print "*********PP**********"
     messaging_event = data["entry"][0]["messaging"]
     for event in messaging_event:
         if "message" in event and "text" in event["message"]:
